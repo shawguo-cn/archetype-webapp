@@ -12,5 +12,5 @@ RUN cd /tmp/build && mvn -q -DskipTests=true package \
         && cd / && rm -rf /tmp/build
 
 VOLUME /tmp
-EXPOSE 8080
+EXPOSE 8090
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
